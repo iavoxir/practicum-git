@@ -14,6 +14,8 @@ git log --oneline       # История коммитов (кратко)
 git branch              # Просмотр веток
 git checkout -b new-branch  # Создание и переход в новую ветку
 git merge new-branch    # Слияние ветки
+git commit --amend --no-edit    # Дополнить файл коммита
+git commit --amend -m "Новое сообщение"    # Изменить сообщение коммита
 ```
 
 ## Работа с файлами и папками:
@@ -133,4 +135,12 @@ git push origin <ветка>
 5. Добавь изменения, закоммить и запушь.  
 
 ---
+### **Mermaid-схема**
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
 
+%% стрелка без текста для примера: 
+  A --> B;
+```
