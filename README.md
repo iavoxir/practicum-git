@@ -133,4 +133,12 @@ git push origin <ветка>
 5. Добавь изменения, закоммить и запушь.  
 
 ---
+### **Mermaid-схема**
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
 
+%% стрелка без текста для примера: 
+  A --> B;
+```
