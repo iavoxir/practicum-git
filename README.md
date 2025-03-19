@@ -21,6 +21,14 @@ git restore --staged <file>    # Выполнить unstage изменений
 git reset --hard <commit hash>    # «Откатить» коммит
 ```
 
+## Работа с ветками:
+```bash
+git branch temp-branch  # Создаст новую ветку с текущими изменениями
+git checkout main       # Вернёт тебя в main
+git merge temp-branch   # Объединит изменения в main
+git branch -d temp-branch  # Удалит временную ветку (если больше не нужна)
+```
+
 ## Работа с файлами и папками:
 ```bash
 pwd                    # Показать текущую папку
