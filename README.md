@@ -23,6 +23,7 @@ git reset --hard <commit hash>    # «Откатить» коммит
 
 ## Работа с ветками:
 ```bash
+git branch -m master main	#Переименовать master в main
 git branch temp-branch  # Создаст новую ветку с текущими изменениями
 git checkout main       # Вернёт тебя в main
 git merge temp-branch   # Объединит изменения в main
